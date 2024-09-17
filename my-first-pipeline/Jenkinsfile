@@ -8,5 +8,10 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('dev') {
+      steps { 
+        sh 'docker --version'
+      }
+    }      
   }
 }
